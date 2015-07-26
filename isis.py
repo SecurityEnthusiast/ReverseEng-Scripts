@@ -124,7 +124,7 @@ def get_socket(chal):
         s.connect((ip,port,0,0))
     else:#ipv4
         s=socket.socket()
-        s.settimeout(50)
+        s.settimeout(5)
         s.connect(chal)
     return s
 
